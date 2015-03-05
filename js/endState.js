@@ -4,7 +4,7 @@ var EndState = State.extend({
 		this._super(game);
 
 		this.hasEnterName = false;
-		this.nick = "no name";
+		this.nick = "Type Your Name";
 		this.score = game.stateVars.score;
 
 		this.hiscores = [
@@ -32,7 +32,7 @@ var EndState = State.extend({
 				this.namefield.blur();
 				this.nick = this.nick.replace(/[^a-zA-Z0-9\s]/g, "");
 				this.hiscores.push([this.nick, this.score]);
-				
+
 
 				this.hiscores.sort(function(a, b) {
 					return b[1] - a[1];
@@ -70,7 +70,7 @@ var EndState = State.extend({
 			ctx.vectorText("press space to continue", 1, 200, 350);
 		} else {
 			ctx.vectorText("Thanks for playing", 4, null, 100);
-			ctx.vectorText("nick", 2, null, 180);
+			ctx.vectorText("You Lost", 2, null, 180);
 			ctx.vectorText(this.nick, 3, null, 220);
 			ctx.vectorText(this.score, 3, null, 300);
 		}
