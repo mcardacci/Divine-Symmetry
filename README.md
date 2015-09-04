@@ -6,6 +6,6 @@
    - Event FX
    - Music..maybe
    - Ship explosion upon contact with Asteroids
-###[Click Here to Play](http://rawgit.com/mcardacci/Divine-Symmetry/master/index.html)
+### [Click Here to Play](http://rawgit.com/mcardacci/Divine-Symmetry/master/index.html)
 
 
